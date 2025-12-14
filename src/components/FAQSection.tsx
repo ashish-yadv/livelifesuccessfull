@@ -95,7 +95,7 @@ export function FAQSection() {
 
         {/* Still Have Questions */}
         <div className="mt-16 text-center">
-          <div className="inline-block p-8 bg-gradient-to-br from-[#D87620]/5 to-[#FE8D2A]/5 rounded-2xl border border-[#d4af37]/20">
+          <div className="inline-block p-6  sm:p-8 bg-gradient-to-br from-[#D87620]/5 to-[#FE8D2A]/5 rounded-2xl border border-[#d4af37]/20">
             <p className="font-semibold text-xl text-gray-700 dark:text-gray-300 mb-4">
               Still have questions?
             </p>

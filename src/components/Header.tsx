@@ -9,6 +9,25 @@ export function Header() {
   // const [theme, setTheme] = useState<Theme>('system');
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
 
+  const navigationLinks = [
+    {
+      title: "solution",
+      link: "solution",
+    },
+    {
+      title: "About",
+      link: "about",
+    },
+    {
+      title: "Pricing",
+      link: "pricing",
+    },
+    {
+      title: "FAQ",
+      link: "faq",
+    },
+  ];
+
  /* { useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;
     if (savedTheme) {
@@ -50,11 +69,12 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          
           {/* Logo */}
           <div className="flex-shrink-0">
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 cursor-pointer"
             >
               <Circle color="#FE8D2A" fill="#FE8D2A"/>
 
@@ -69,18 +89,13 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('solution')} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors">
-              System
-            </button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors">
-              About
-            </button>
-            <button onClick={() => scrollToSection('pricing')} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors">
-              Pricing
-            </button>
-            <button onClick={() => scrollToSection('faq')} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors">
-              FAQ
-            </button>
+            {
+              navigationLinks.map((navigationLink, index) => (
+                <button key={index} onClick={() => scrollToSection(navigationLink.link)} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors cursor-pointer">
+                    {navigationLink.title}
+                  </button>
+                ))
+            }
 
             {/* Theme Switcher */}
             <div className="relative">
@@ -123,7 +138,7 @@ export function Header() {
 
             <button 
               onClick={() => scrollToSection('pricing')}
-              className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-colors"
+              className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-medium text-white rounded-lg transition-colors cursor-pointer"
             >
               Get Started
             </button>
@@ -131,14 +146,14 @@ export function Header() {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
-            <button
+            {/* <button
               onClick={() => setThemeDropdownOpen(!themeDropdownOpen)}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
-              {/* {theme === 'light' && <Sun className="w-5 h-5" />}
+              {theme === 'light' && <Sun className="w-5 h-5" />}
               {theme === 'dark' && <Moon className="w-5 h-5" />}
-              {theme === 'system' && <Monitor className="w-5 h-5" />} */}
-            </button>
+              {theme === 'system' && <Monitor className="w-5 h-5" />}
+            </button> */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -166,7 +181,7 @@ export function Header() {
               </button>
               <button 
                 onClick={() => scrollToSection('pricing')}
-                className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-colors text-center"
+                className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-semibold text-white rounded-lg transition-colors text-center"
               >
                 Get Started
               </button>

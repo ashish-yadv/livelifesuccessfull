@@ -9,7 +9,7 @@ export function TurningPointSection() {
         }}></div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
           <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6">
@@ -75,7 +75,7 @@ export function TurningPointSection() {
         </div>
 
         {/* Key Insight */}
-        <div className="mt-20 p-8 sm:p-12 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl border-l-4 border-[#FE8D2A]">
+        <div className="mt-20 p-6 sm:p-12 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 rounded-2xl border-l-4 border-[#FE8D2A]">
           <p className="text-2xl sm:text-3xl italic leading-relaxed">
             The breakthrough wasn&apos;t learning more. It was simplifying everything. Removing the noise. Building one habit at a time. Trusting the process, not the feeling.
           </p>

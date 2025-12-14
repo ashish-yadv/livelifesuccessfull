@@ -1,4 +1,5 @@
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface SolutionSectionProps {
   onGetStarted: () => void;
@@ -6,11 +7,11 @@ interface SolutionSectionProps {
 
 export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
   const features = [
-    '30-day structure to rebuild discipline from the ground up',
-    'Habit tracking templates that actually work',
-    'Daily accountability system (no coach required)',
-    'Reset routines for when you fall off track',
-    'Morning & night ritual guides',
+    '30-day blueprint to rebuild discipline from the ground up',
+    'Habit mastery system',
+    'Daily accountability (no coach required)',
+    // 'Reset routines for when you fall off track',
+    // 'Morning & night ritual guides',
     'Distraction-proofing framework',
     'Identity-based habit formation',
     'Science-backed minimal effort techniques',
@@ -18,19 +19,21 @@ export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
 
   return (
     <section id="solution" className="py-24 sm:py-32 bg-white dark:bg-gray-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Image */}
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1676287565869-6992e7df9bb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncm93dGglMjBtaW5kc2V0JTIwam91cm5hbHxlbnwxfHx8fDE3NjUwNzk1MTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Habit Mastery System"
-                className="w-full h-full object-cover"
+              <Image
+                src="/Habit Mastery Bundle 2.png"
+                alt='Habit Mastery Bundle'
+                width={600}
+                height={600}
+                className='w-full h-full object-cover'
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}
               <div className="absolute bottom-8 left-8 text-white">
-                <div className="text-3xl mb-2">30 Days</div>
+                <div className="font-medium text-3xl">30 Days</div>
                 <div className="text-lg opacity-90">To Transform Your Life</div>
               </div>
             </div>
@@ -63,9 +66,11 @@ export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
             {/* CTA */}
             <button
               onClick={onGetStarted}
-              className="group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl"
+              className="group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
-              <span>Start Your 30-Day Transformation</span>
+              <span className="font-semibold">
+                Start Your 30-Day Transformation
+              </span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
 

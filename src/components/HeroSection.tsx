@@ -11,9 +11,9 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         {/* <img
-          src="https://images.unsplash.com/photo-1533379007656-3a10925da2e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwZm9jdXMlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzY1MDc5NTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="/Vector.png"
           alt="Minimal workspace"
-          className="w-full h-full object-cover"
+          className="w-full h-full relative object-cover"
         /> */}
         <div className="absolute inset-0 bg-white/90 dark:bg-gray-950/90"></div>
       </div>
@@ -22,7 +22,7 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Headline */}
-          <h1 className="font-semibold text-5xl sm:text-6xl lg:text-7xl mb-6 sm:mb-8">
+          <h1 className="font-semibold text-5xl sm:text-6xl lg:text-7xl mb-6 sm:mb-8 leading-[1.2]">
             Rebuild Your Discipline.
             <br />
             <span className="text-[#FE8D2A]">
@@ -39,7 +39,7 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={onGetStarted}
-              className="w-full sm:w-auto group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+              className="w-full sm:w-auto group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
               <span className="font-semibold">
                 Habit Mastery Bundle
@@ -49,10 +49,10 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
             
             <button
               onClick={onDownloadGuide}
-              className="w-full sm:w-auto group px-8 py-4 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-gray-200 dark:border-gray-700"
+              className="w-full sm:w-auto group px-8 py-4 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 border-2 border-gray-200 dark:border-gray-700 cursor-pointer"
             >
               <Download className="w-5 h-5" />
-              <span>
+              <span className="font-semibold">
                 Free Discipline Reset Checklist
               </span>
             </button>

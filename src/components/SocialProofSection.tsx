@@ -66,7 +66,7 @@ export function SocialProofSection() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-[#FE8D2A] dark:hover:border-[#FE8D2A] transition-all duration-300 hover:shadow-xl"
+              className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-[#FE8D2A] dark:hover:border-[#FE8D2A] transition-all duration-300 hover:shadow-xl"
             >
               {/* Quote Icon */}
               <Quote className="w-10 h-10 text-[#FE8D2A] opacity-20 mb-4" />

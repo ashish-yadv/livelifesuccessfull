@@ -69,7 +69,7 @@ export function ProblemSection() {
 
         {/* Emotional Hook */}
         <div className="mt-16 sm:mt-20 text-center max-w-3xl mx-auto">
-          <div className="bg-gradient-to-br from-[#FE8D2A]/5 to-[#FE8D2A]/5 p-8 sm:p-12 rounded-2xl border border-[#FE8D2A]/20">
+          <div className="bg-gradient-to-br from-[#FE8D2A]/5 to-[#FE8D2A]/5 p-6 sm:p-12 rounded-2xl border border-[#FE8D2A]/20">
             <p className="text-2xl sm:text-3xl italic text-gray-700 dark:text-gray-300 leading-relaxed sm:leading-9">
               &quot;I kept blaming myself for lacking willpower. But the truth was, I didn&apos;t have a system. I was running on empty, expecting motivation to carry me forever.&quot;
             </p>

@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface FinalCTASectionProps {
   onGetStarted: () => void;
@@ -9,23 +10,25 @@ export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
     <section className="py-24 sm:py-32 relative overflow-hidden">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/10 via-transparent to-[#b8941f]/10"></div>
-      
+
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
         <img
-          src="https://images.unsplash.com/photo-1501597301489-8b75b675ba0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYWxtJTIwbWVkaXRhdGlvbiUyMG1vcm5pbmd8ZW58MXx8fHwxNzY1MDc5NTE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Background"
           className="w-full h-full object-cover"
         />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
         {/* Main Content */}
-        <div className="bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm rounded-3xl p-12 sm:p-16 border border-gray-200 dark:border-gray-800 shadow-2xl">
+        <div className="bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm rounded-3xl p-6 sm:p-14 border border-gray-200 dark:border-gray-800 shadow-2xl">
           <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-8">
             Discipline Isn&apos;t Motivation.
             <br />
-            <span className="text-[#FE8D2A]">It&apos;s Systems.</span>
+            <span className="text-[#FE8D2A]">
+              It&apos;s Systems.
+            </span>
           </h2>
 
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -35,9 +38,12 @@ export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
           {/* CTA Button */}
           <button
             onClick={onGetStarted}
-            className="group px-10 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 inline-flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg sm:text-xl"
+            className="group px-10 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 inline-flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg sm:text-xl cursor-pointer"
           >
-            <span>Start the Habit Mastery Bundle</span>
+            <span className="font-semibold">
+              {/* Start with Habit Mastery Bundle */}
+              Start Here
+            </span>
             <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </button>
 
@@ -77,7 +83,7 @@ export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
             </div>
-            <span className="font-medium text-gray-600 dark:text-gray-400">30-Day Guarantee</span>
+            <span className="font-medium text-gray-600 dark:text-gray-400">Satisfaction</span>
           </div>
         </div>
       </div>

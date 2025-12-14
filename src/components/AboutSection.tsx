@@ -1,17 +1,21 @@
+import Image from "next/image"
+
 export function AboutSection() {
   return (
     <section id="about" className="py-24 sm:py-32 bg-gray-50 dark:bg-gray-900/50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
           <div className="order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1556031190-a301a28c7dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdWNjZXNzJTIwYWNoaWV2ZW1lbnQlMjBwZXJzb258ZW58MXx8fHwxNzY1MDc5NTE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="About the founder"
-                className="w-full h-full object-cover"
+            <div className="relative rounded-2xl overflow-hidden">
+              <Image
+                src="/From Lost to Focused.png"
+                alt="From lost to focused"
+                width={600}
+                height={600}
+                className="w=full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div> */}
             </div>
           </div>
 
@@ -57,7 +61,7 @@ export function AboutSection() {
 
         {/* Mission Statement */}
         <div className="mt-20 text-center max-w-3xl mx-auto">
-          <div className="p-8 sm:p-12 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800">
+          <div className="p-6 sm:p-12 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800">
             <h3 className="font-medium text-[#FE8D2A] text-2xl sm:text-3xl mb-4">My Mission</h3>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
               To help people stop restarting and start building. To make discipline simple, not complicated. To prove that systems beat motivation every single time.

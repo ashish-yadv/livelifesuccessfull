@@ -23,7 +23,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6">
+          <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6 leading-[1.2]">
             Simple Pricing.
             <br />
             <span className="text-[#FE8D2A]">Lifetime Value.</span>
@@ -43,7 +43,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 rounded-3xl border-2 border-[#d4af37] p-8 sm:p-12 shadow-2xl">
+            <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 rounded-3xl border-2 border-[#d4af37] p-6 sm:p-12 shadow-2xl">
               {/* Header */}
               <div className="text-center mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
                 <h3 className="font-semibold text-3xl mb-4">Habit Mastery Bundle</h3>
@@ -67,9 +67,11 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               {/* CTA Button */}
               <button
                 onClick={onGetStarted}
-                className="w-full group px-8 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl text-lg"
+                className="w-full group px-8 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl text-lg cursor-pointer"
               >
-                <span>Start Today</span>
+                <span className="font-semibold">
+                  Start Today
+                </span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
 

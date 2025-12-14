@@ -1,4 +1,7 @@
 import { Circle } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -9,20 +12,58 @@ export function Footer() {
     }
   };
 
+  const socials = [
+    {
+      href: "https://instagram.com/livelifesuccessfull",
+      src: "/instagram.svg",
+      alt: "instagram",
+    },
+    {
+      href: "https://x.com/livelikesuccess",
+      src: "/x.svg",
+      alt: "x",
+    },
+    {
+      href: "https://www.threads.com/@livelifesuccessfull",
+      src: "/threads.svg",
+      alt: "threads",
+    },
+    {
+      href: "https://www.linkedin.com/in/livelifesuccessfull/",
+      src: "/linked-in.svg",
+      alt: "linked-in",
+    },
+    {
+      href: "https://medium.com/@livelifesuccessfull",
+      src: "/medium.svg",
+      alt: "medium",
+    },
+    {
+      href: "https://substack.com/@livelifesuccessfull",
+      src: "/substack.svg",
+      alt: "substack",
+    },
+    {
+      href: "https://livelifesuccessfull.gumroad.com/",
+      src: "/gumroad.svg",
+      alt: "gumroad",
+    },
+  ];
+
+
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Circle color="#FE8D2A" fill="#FE8D2A" />
-
-              {/* Enable👇 when you want "Logo" and "Text" */}
-              {/* <div className="w-10 h-10 bg-gradient-to-br from-[#D87620] to-[#FE8D2A] rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl">L</span>
-              </div> */}
-              {/* <span className="font-medium text-xl">LiveLifeSuccessfull</span> */}
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="flex items-center space-x-2 cursor-pointer"
+              >
+                <Circle color="#FE8D2A" fill="#FE8D2A" />
+              </button>
             </div>
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-md">
               Simple, science-backed systems to help you rebuild discipline, focus, and habits—one day at a time.
@@ -36,7 +77,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('solution')}
-                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors cursor-pointer"
                 >
                   System
                 </button>
@@ -44,7 +85,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors cursor-pointer"
                 >
                   About
                 </button>
@@ -52,7 +93,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('pricing')}
-                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors cursor-pointer"
                 >
                   Pricing
                 </button>
@@ -60,7 +101,7 @@ export function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection('faq')}
-                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
+                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors cursor-pointer"
                 >
                   FAQ
                 </button>
@@ -80,14 +121,26 @@ export function Footer() {
                   Support
                 </a>
               </li>
-              <li>
-                <a
-                  href="mailto:livelifesuccessfulll@gmail.com"
-                  className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
-                >
-                  General Inquiries
-                </a>
-              </li>
+            </ul>
+          </div>
+
+          {/* Socials */}
+          <div>
+            <h4 className="font-medium mb-4">Connect 👇</h4>
+            <ul className="space-y-3 flex gap-3">
+              {socials.map((social, index) => (
+                <Link
+                  key={index}
+                  href={social.href}
+                  target="_blank">
+                  <Image
+                    src={social.src}
+                    alt={social.alt}
+                    width={18}
+                    height={18}
+                  />
+                </Link>
+              ))}
             </ul>
           </div>
         </div>

@@ -50,7 +50,7 @@ export function ValueSection() {
               className="group relative"
             >
               {/* Card */}
-              <div className="h-full bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-8 sm:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-[#FE8D2A] dark:hover:border-[#FE8D2A] transition-all duration-300 hover:shadow-xl">
+              <div className="h-full bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 p-6 sm:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 hover:border-[#FE8D2A] dark:hover:border-[#FE8D2A] transition-all duration-300 hover:shadow-xl">
                 {/* Icon */}
                 <div className="w-16 h-16 bg-gradient-to-br from-[#D87620] to-[#FE8D2A] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <module.icon className="w-8 h-8 text-white" />
@@ -77,7 +77,7 @@ export function ValueSection() {
 
         {/* Bottom Statement */}
         <div className="mt-20 text-center max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#d4af37]/5 to-[#b8941f]/5 p-8 sm:p-12 rounded-2xl border border-[#d4af37]/20">
+          <div className="bg-gradient-to-br from-[#d4af37]/5 to-[#b8941f]/5 p-6 sm:p-12 rounded-2xl border border-[#d4af37]/20">
             <p className="text-2xl sm:text-3xl leading-relaxed sm:leading-9">
               These frameworks work together to create a complete system. You don&apos;t need more information—you need the{' '}
               <span className="text-[#FE8D2A] italic">right information</span>, applied consistently.
