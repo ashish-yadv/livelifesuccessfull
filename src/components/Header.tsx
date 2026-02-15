@@ -11,7 +11,7 @@ export function Header() {
 
   const navigationLinks = [
     {
-      title: "solution",
+      title: "Solution",
       link: "solution",
     },
     {
