@@ -30,6 +30,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Livelifesuccessfull",
   description: "Where life meets SYSTEM",
+  other: {
+    "p:domain_verify": "aa78553ecc06506d37187d2c9b4a35c5",
+  },
 };
 
 export default function RootLayout({
