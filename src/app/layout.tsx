@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Poppins} from "next/font/google";
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className={`${poppins.className} ${inter.className} ${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
