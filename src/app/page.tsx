@@ -30,7 +30,8 @@ export default function Home() {
 
   const handleDownloadGuide = () => {
     // setShowForm('lead');         // NOTE: Enable this when using "Forms" to collect data.
-    window.open("https://livelifesuccessfull.gumroad.com/l/sskxcg", "_blank")
+    // window.open("https://livelifesuccessfull.gumroad.com/l/the-discipline-reset-checklist", "_blank")
+    window.open("https://livelifesuccessfull.gumroad.com/l/30-day-habit-transformation-blueprint-free-version", "_blank")
   };
 
   // const handleFormSubmit = (data: { name: string; email: string }) => {
