@@ -42,7 +42,7 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
               className="w-full sm:w-auto group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
               <span className="font-semibold">
-                Habit Mastery Bundle
+                Habit Mastery System
               </span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -53,7 +53,8 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
             >
               <Download className="w-5 h-5" />
               <span className="font-semibold">
-                Free Discipline Reset Checklist
+                {/* Free Discipline Reset Checklist */}
+                Free Transformation Blueprint
               </span>
             </button>
           </div>

@@ -24,7 +24,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6 leading-[1.2]">
-            Simple Pricing.
+            Simple Investment.
             <br />
             <span className="text-[#FE8D2A]">Lifetime Value.</span>
           </h2>
@@ -46,12 +46,12 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
             <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 rounded-3xl border-2 border-[#d4af37] p-6 sm:p-12 shadow-2xl">
               {/* Header */}
               <div className="text-center mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
-                <h3 className="font-semibold text-3xl mb-4">Habit Mastery Bundle</h3>
+                <h3 className="font-semibold text-3xl mb-4">Habit Mastery System</h3>
                 <div className="flex items-end justify-center gap-2 mb-2">
                   <span className="text-gray-400 line-through">$199</span>
-                  <span className="text-6xl text-[#FE8D2A]">$32</span>
+                  <span className="text-6xl text-[#FE8D2A]">$27</span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400"> • One-time payment • Lifetime access</p>
+                <p className="text-gray-600 dark:text-gray-400"> • One-time investment • Lifetime access</p>
               </div>
 
               {/* Features */}
@@ -103,7 +103,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               <div className="font-medium text-sm text-gray-600 dark:text-gray-400">Online Courses</div>
             </div>
             <div className="p-4 bg-[#FE8D2A] text-white rounded-xl">
-              <div className="font-medium text-2xl mb-1">$32</div>
+              <div className="font-medium text-2xl mb-1">$27</div>
               <div className="font-medium text-sm">This Complete System</div>
             </div>
           </div>
