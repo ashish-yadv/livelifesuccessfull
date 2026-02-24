@@ -103,7 +103,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               <div className="font-medium text-sm text-gray-600 dark:text-gray-400">Online Courses</div>
             </div>
             <div className="p-4 bg-[#FE8D2A] text-white rounded-xl">
-              <div className="font-medium text-2xl mb-1">$27</div>
+              <div className="font-medium text-2xl mb-1">$44</div>
               <div className="font-medium text-sm">This Complete System</div>
             </div>
           </div>

@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <div className="relative selection:bg-orange-300 selection:text-black">
-      <Header />
+      <Header onGetStarted={handleGetStarted}/>
       <main>
         <HeroSection onGetStarted={handleGetStarted} onDownloadGuide={handleDownloadGuide} />
         <SocialProofSection1 />

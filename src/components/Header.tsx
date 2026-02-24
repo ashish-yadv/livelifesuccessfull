@@ -4,7 +4,11 @@ import { Menu, X, Sun, Moon, Monitor } from 'lucide-react';
 
 // type Theme = 'light' | 'dark' | 'system';
 
-export function Header() {
+interface Header {
+  onGetStarted: () => void;
+}
+
+export function Header({ onGetStarted }: Header) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // const [theme, setTheme] = useState<Theme>('system');
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
@@ -137,7 +141,8 @@ export function Header() {
             </div>
 
             <button 
-              onClick={() => scrollToSection('pricing')}
+              // onClick={() => scrollToSection('pricing')}
+              onClick={onGetStarted}
               className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-medium text-white rounded-lg transition-colors cursor-pointer"
             >
               Build Better Habits
@@ -173,14 +178,15 @@ export function Header() {
               <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
                 About
               </button>
-              <button onClick={() => scrollToSection('pricing')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
+              {/* <button onClick={() => scrollToSection('pricing')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
                 Pricing
-              </button>
+              </button> */}
               <button onClick={() => scrollToSection('faq')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
                 FAQ
               </button>
               <button 
-                onClick={() => scrollToSection('pricing')}
+                // onClick={() => scrollToSection('pricing')}
+                onClick={onGetStarted}
                 className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-semibold text-white rounded-lg transition-colors text-center"
               >
                 Build Better Habits
