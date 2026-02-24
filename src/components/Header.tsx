@@ -18,10 +18,10 @@ export function Header() {
       title: "About",
       link: "about",
     },
-    {
-      title: "Pricing",
-      link: "pricing",
-    },
+    // {
+    //   title: "Pricing",
+    //   link: "pricing",
+    // },
     {
       title: "FAQ",
       link: "faq",
@@ -140,7 +140,7 @@ export function Header() {
               onClick={() => scrollToSection('pricing')}
               className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-medium text-white rounded-lg transition-colors cursor-pointer"
             >
-              Get Started
+              Build Better Habits
             </button>
           </div>
 
@@ -183,7 +183,7 @@ export function Header() {
                 onClick={() => scrollToSection('pricing')}
                 className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-semibold text-white rounded-lg transition-colors text-center"
               >
-                Get Started
+                Build Better Habits
               </button>
             </div>
           </div>

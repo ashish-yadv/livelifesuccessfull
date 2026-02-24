@@ -49,7 +49,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
                 <h3 className="font-semibold text-3xl mb-4">Habit Mastery System</h3>
                 <div className="flex items-end justify-center gap-2 mb-2">
                   <span className="text-gray-400 line-through">$199</span>
-                  <span className="text-6xl text-[#FE8D2A]">$27</span>
+                  <span className="text-6xl text-[#FE8D2A]">$44</span>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400"> • One-time investment • Lifetime access</p>
               </div>

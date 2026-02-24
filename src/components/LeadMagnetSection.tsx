@@ -1,4 +1,5 @@
 import { Download, CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 interface LeadMagnetSectionProps {
   onDownloadGuide: () => void;
@@ -21,24 +22,21 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
 
             {/* Left Side: Visual */}
             <div className="bg-gradient-to-br from-[#D87620] to-[#FE8D2A] p-4 sm:p-12 flex flex-col justify-center items-center text-white">
-              <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm">
-                <Download className="w-12 h-12" />
-              </div>
-              <h3 className="font-semibold text-3xl sm:text-4xl text-center mb-4">
-                Free 30-Day Discipline Reset Guide
-              </h3>
-              <p className="text-xl text-center opacity-90">
-                Zero fluff. Pure action.
-              </p>
-              <div className="mt-8 text-center">
-                <div className="font-semibold text-5xl mb-2">FREE</div>
-                <div className="text-lg opacity-80">Usually $49</div>
-              </div>
+              <Image
+                src="/discipline-reset-checklist.png"
+                alt='The Discipline Reset Checklist'
+                width={720}
+                height={720}
+                className='w-full shadow-2xl'
+              />
             </div>
 
             {/* Right Side: Form & Benefits */}
             <div className="p-6 sm:p-12">
-              <h4 className="font-medium text-2xl sm:text-3xl mb-6">
+              <h3 className="font-semibold text-3xl text-[#FE8D2A] sm:text-4xl text-left mb-4">
+                The Discipline Reset Checklist
+              </h3>
+              <h4 className="font-medium text-xl sm:text-2xl mb-6">
                 What You&apos;ll Learn Inside:
               </h4>
 
@@ -49,6 +47,15 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
                     <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
                   </div>
                 ))}
+                <p className="text-xm text-center align-middle opacity-90 flex">
+                  Zero fluff. Pure action.
+                </p>
+                <div className="text-center mb-8 pb-4 border-b border-gray-200 dark:border-gray-800">
+                  <div className="flex items-end justify-center gap-2 mb-2">
+                    <span className="text-gray-400 line-through">$47</span>
+                    <span className="text-3xl text-[#FE8D2A]">$0</span>
+                  </div>
+                </div>
               </div>
 
               <button
@@ -57,12 +64,12 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
               >
                 <Download className="w-5 h-5" />
                 <span className="font-semibold">
-                  Free Guide
+                  Download Guide
                 </span>
               </button>
 
               <p className="mt-4 text-sm text-center text-gray-500 dark:text-gray-400">
-                No spam. Just the guide and occasional insights. Unsubscribe anytime.
+                No spam. Just the checklist and occasional insights. Unsubscribe anytime.
               </p>
             </div>
           </div>

@@ -5,7 +5,8 @@ import { HeroSection } from '../components/HeroSection';
 import { ProblemSection } from '../components/ProblemSection';
 import { TurningPointSection } from '../components/TurningPointSection';
 import { SolutionSection } from '../components/SolutionSection';
-import { SocialProofSection } from '../components/SocialProofSection';
+import { SocialProofSection1 } from '../components/SocialProofSection1';
+import { SocialProofSection2 } from '../components/SocialProofSection2';
 import { LeadMagnetSection } from '../components/LeadMagnetSection';
 import { ValueSection } from '../components/ValueSection';
 import { AboutSection } from '../components/AboutSection';
@@ -56,10 +57,11 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection onGetStarted={handleGetStarted} onDownloadGuide={handleDownloadGuide} />
+        <SocialProofSection1 />
         <ProblemSection />
         <TurningPointSection />
         <SolutionSection onGetStarted={handleGetStarted} />
-        <SocialProofSection />
+        <SocialProofSection2 />
         <LeadMagnetSection onDownloadGuide={handleDownloadGuide} />
         <ValueSection />
         <AboutSection />

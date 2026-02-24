@@ -23,16 +23,16 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Headline */}
           <h1 className="font-semibold text-5xl sm:text-6xl lg:text-7xl mb-6 sm:mb-8 leading-[1.2]">
-            Rebuild Your Discipline.
+            Rebuild Your Habits.
             <br />
             <span className="text-[#FE8D2A]">
-              Rebuild Your Life.
+              Rebuild Your Discipline.
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-12 sm:mb-16 max-w-3xl mx-auto">
-            Simple systems to help you regain consistency, focus, and control.<br/>One day at a time.
+            Simple systems to help you regain better habits, discipline, consistency, and control.<br/>One day at a time.
           </p>
 
           {/* CTA Buttons */}
