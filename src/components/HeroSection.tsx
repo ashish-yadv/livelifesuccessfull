@@ -39,7 +39,7 @@ export function HeroSection({ onGetStarted, onDownloadGuide }: HeroSectionProps)
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={onGetStarted}
-              className="w-full sm:w-auto group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
+              className="w-full sm:w-auto group px-8 py-4 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
               <span className="font-semibold">
                 Habit Mastery System

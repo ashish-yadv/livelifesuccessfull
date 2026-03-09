@@ -21,9 +21,9 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2">
 
             {/* Left Side: Visual */}
-            <div className="bg-gradient-to-br from-[#D87620] to-[#FE8D2A] p-4 sm:p-12 flex flex-col justify-center items-center text-white">
+            <div className="bg-gradient-to-br from-[#FE8D2A] to-[#D87620] p-4 sm:p-12 flex flex-col justify-center items-center text-white">
               <Image
-                src="/discipline-reset-checklist.png"
+                src="/discipline-reset-checklist.webp"
                 alt='The Discipline Reset Checklist'
                 width={720}
                 height={720}
@@ -60,7 +60,7 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
 
               <button
                 onClick={onDownloadGuide}
-                className="w-full group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
+                className="w-full group px-8 py-4 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
               >
                 <Download className="w-5 h-5" />
                 <span className="font-semibold">

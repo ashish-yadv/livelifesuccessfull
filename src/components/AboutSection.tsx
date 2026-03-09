@@ -9,7 +9,7 @@ export function AboutSection() {
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden">
               <Image
-                src="/From Lost to Focused.png"
+                src="/From Lost to Focused.webp"
                 alt="From lost to focused"
                 width={600}
                 height={600}
@@ -64,7 +64,7 @@ export function AboutSection() {
           <div className="p-6 sm:p-12 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800">
             <h3 className="font-medium text-[#FE8D2A] text-2xl sm:text-3xl mb-4">My Mission</h3>
             <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-              To help people stop restarting and start building. To make discipline simple, not complicated. To prove that systems beat motivation every single time.
+              To help 100,000+ people stop restarting and start building. To make discipline simple, not complicated. To prove that systems beat motivation not once but every single time.
             </p>
           </div>
         </div>

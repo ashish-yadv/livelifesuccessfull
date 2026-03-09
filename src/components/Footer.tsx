@@ -53,7 +53,7 @@ export function Footer() {
 
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div className="max-w-100% mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
@@ -127,19 +127,20 @@ export function Footer() {
           {/* Socials */}
           <div>
             <h4 className="font-medium mb-4">Connect 👇</h4>
-            <ul className="space-y-3 flex gap-3">
+            <ul className="space-y-3 flex gap-7 md:gap-3">
               {socials.map((social, index) => (
-                <Link
-                  key={index}
-                  href={social.href}
-                  target="_blank">
-                  <Image
-                    src={social.src}
-                    alt={social.alt}
-                    width={18}
-                    height={18}
-                  />
-                </Link>
+                <li key={index}>
+                  <Link
+                    href={social.href}
+                    target="_blank">
+                    <Image
+                      src={social.src}
+                      alt={social.alt}
+                      width={18}
+                      height={18}
+                    />
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

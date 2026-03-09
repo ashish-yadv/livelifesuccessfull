@@ -25,16 +25,16 @@ export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/habit-mastery-system.png"
+                src="/habit-mastery-system.webp"
                 alt='Habit Mastery System'
                 width={1920}
                 height={1920}
                 className='w-full h-full object-cover'
               />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div> */}
-              <div className="absolute top-0 left-8 text-white">
-                <div className="font-medium text-3xl">30 Days</div>
-                <div className="text-lg opacity-90">To Transform Your Life</div>
+              <div className="absolute top-0 text-white">
+                <div className="font-medium text-3xl">Complete System</div>
+                {/* <div className="text-lg opacity-90">To Transform Your Life</div> */}
               </div>
             </div>
           </div>
@@ -66,10 +66,12 @@ export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
             {/* CTA */}
             <button
               onClick={onGetStarted}
-              className="group px-8 py-4 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
+              className="group px-8 py-4 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
               <span className="font-semibold">
-                Make Discipline Your Identity
+                {/* Make Discipline Your Identity */}
+                {/* Build Identity Based Habits */}
+                Get The Complete System
               </span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

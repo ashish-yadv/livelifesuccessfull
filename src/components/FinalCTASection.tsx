@@ -38,7 +38,7 @@ export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
           {/* CTA Button */}
           <button
             onClick={onGetStarted}
-            className="group px-10 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 inline-flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg sm:text-xl cursor-pointer"
+            className="group px-10 py-5 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-xl transition-all duration-300 inline-flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg sm:text-xl cursor-pointer"
           >
             <span className="font-semibold">
               {/* Start with Habit Mastery Bundle */}
