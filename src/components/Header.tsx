@@ -143,7 +143,7 @@ export function Header({ onGetStarted }: Header) {
             <button 
               // onClick={() => scrollToSection('pricing')}
               onClick={onGetStarted}
-              className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-medium text-white rounded-lg transition-colors cursor-pointer"
+              className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-medium text-[#000000] rounded-lg transition-colors cursor-pointer"
             >
               Build Better Habits
             </button>
@@ -187,7 +187,7 @@ export function Header({ onGetStarted }: Header) {
               <button 
                 // onClick={() => scrollToSection('pricing')}
                 onClick={onGetStarted}
-                className="px-6 py-2 bg-[#D87620] hover:bg-[#FE8D2A] font-semibold text-white rounded-lg transition-colors text-center"
+                className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-semibold text-[#000000] rounded-lg transition-colors text-center"
               >
                 Build Better Habits
               </button>

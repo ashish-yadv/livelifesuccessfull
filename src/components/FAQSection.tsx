@@ -105,7 +105,7 @@ export function FAQSection() {
                 livelifesuccessfulll@gmail.com
               </a> */}
               <Link href="mailto:livelifesuccessfulll@gmail.com"
-                className="text-[#FE8D2A] italic hover:underline">
+                className="text-[#FE8D2A] font-semibold italic hover:underline">
                 livelifesuccessfulll@gmail.com
               </Link>
             </p>

@@ -38,7 +38,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
           <div className="relative">
             {/* Popular Badge */}
             <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
-              <div className="bg-gradient-to-r from-[#D87620] to-[#FE8D2A] text-white px-6 py-2 rounded-full shadow-lg">
+              <div className="bg-gradient-to-r from-[#FE8D2A] to-[#D87620] text-[#000000] px-6 py-2 rounded-full shadow-lg">
                 Most Popular
               </div>
             </div>
@@ -67,7 +67,7 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               {/* CTA Button */}
               <button
                 onClick={onGetStarted}
-                className="w-full group px-8 py-5 bg-[#D87620] hover:bg-[#FE8D2A] text-white rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl text-lg cursor-pointer"
+                className="w-full group px-8 py-5 bg-[#FE8D2A] hover:bg-[#D87620] text-gray-900 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl text-lg cursor-pointer"
               >
                 <span className="font-semibold">
                   Start Today
@@ -102,9 +102,9 @@ export function PricingSection({ onGetStarted }: PricingSectionProps) {
               <div className="font-medium text-2xl text-[#FE8D2A] mb-1">$2,000+</div>
               <div className="font-medium text-sm text-gray-600 dark:text-gray-400">Online Courses</div>
             </div>
-            <div className="p-4 bg-[#FE8D2A] text-white rounded-xl">
-              <div className="font-medium text-2xl mb-1">$44</div>
-              <div className="font-medium text-sm">This Complete System</div>
+            <div className="p-4 bg-[#FE8D2A] text-gray-900 rounded-xl">
+              <div className="font-bold text-2xl mb-1">$44</div>
+              <div className="font-semibold text-sm">This Complete System</div>
             </div>
           </div>
         </div>
