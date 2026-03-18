@@ -1,7 +1,7 @@
 
-const THE_HABIT_JUMPSTART = `https://livelifesuccessfull.gumroad.com/l/${process.env.NEXT_PUBLIC_THE_HABIT_JUMPSTART ?? '#'}`;
-const NEURAL_REWIRE_BLUEPRINT = `https://livelifesuccessfull.gumroad.com/l/${process.env.NEXT_PUBLIC_NEURAL_REWIRE_BLUEPRINT ?? '#'}`;
-const HABIT_TRANSFORMATION_OS = `https://livelifesuccessfull.gumroad.com/l/${process.env.NEXT_PUBLIC_HABIT_TRANSFORMATION_OS ?? '#'}`;
+const THE_HABIT_JUMPSTART = `https://livelifesuccessfull.gumroad.com/l/30-day-habit-transformation-blueprint`;
+const NEURAL_REWIRE_BLUEPRINT = `https://livelifesuccessfull.gumroad.com/l/neural-rewire-blueprint`;
+const HABIT_TRANSFORMATION_OS = `https://livelifesuccessfull.gumroad.com/l/habit-transformation-os`;
 
 export interface Product {
     id: string;

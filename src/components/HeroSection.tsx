@@ -17,7 +17,7 @@ export function HeroSection({ handlePricingSection, handleFrameworksSection }: H
                     {/* Mobile / Tablet Image */}
                     <Image
                         // src="/hero-image-small-screen-secondary.webp"
-                        src="/hero-image-test-mobile.jpg"
+                        src="/hero-image-small-screen.webp"
                         alt="Person building consistent habits with a clear daily system"
                         fill
                         priority

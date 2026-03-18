@@ -31,7 +31,7 @@ export function TierPricingSection() {
                     <p className="font-semibold text-[#FE8D2A] dark:text-[#FE8D2A] mb-6">
                         Compare the value:
                     </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl sm:max-w-4xl mx-auto">
                         {[
                             { label: '1-on-1 Coaching', value: '$1,500+', highlight: false },
                             { label: 'Online Courses', value: '$500+', highlight: false },
@@ -40,24 +40,15 @@ export function TierPricingSection() {
                         ].map((item, i) => (
                             <div
                                 key={i}
-                                className={`p-4 rounded-xl ${item.highlight
-                                        ? 'bg-[#FE8D2A] text-gray-900'
-                                        : 'bg-gray-50 dark:bg-gray-900'
-                                    }`}
+                                className={`p-4 rounded-xl ${item.highlight ? 'bg-[#FE8D2A] text-gray-900' : 'bg-gray-50 dark:bg-gray-900'}`}
                             >
                                 <div
-                                    className={`font-bold text-2xl mb-1 ${item.highlight
-                                            ? ''
-                                            : 'text-gray-300 dark:text-gray-700 line-through'
-                                        }`}
+                                    className={`font-bold text-2xl mb-1 ${item.highlight ? '' : 'text-gray-400 dark:text-gray-500 line-through'}`}
                                 >
                                     {item.value}
                                 </div>
                                 <div
-                                    className={`text-sm font-medium ${item.highlight
-                                            ? 'text-gray-900'
-                                            : 'text-gray-400 dark:text-gray-600'
-                                        }`}
+                                    className={`text-sm font-medium ${item.highlight ? 'text-gray-900' : 'text-gray-500 dark:text-gray-400'}`}
                                 >
                                     {item.label}
                                 </div>
@@ -67,7 +58,7 @@ export function TierPricingSection() {
                 </div>
 
                 {/* Trust line */}
-                <p className="text-center mt-10 text-sm text-gray-400 dark:text-gray-600">
+                <p className="text-center mt-10 text-sm text-gray-500 dark:text-gray-500">
                     <span className="text-[#FE8D2A] text-sm font-semibold uppercase tracking-widest">
                         ·&nbsp; 
                     </span>
