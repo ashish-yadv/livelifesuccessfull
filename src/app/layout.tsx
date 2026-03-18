@@ -27,7 +27,7 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-
+// Connect pinterest to website
 export const metadata: Metadata = {
   title: "Livelifesuccessfull",
   description: "Where life meets SYSTEM",

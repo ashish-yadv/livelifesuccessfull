@@ -78,7 +78,7 @@ export function LeadMagnetSection({ onDownloadGuide }: LeadMagnetSectionProps) {
         {/* Trust Statement */}
         <div className="mt-12 text-center">
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Join 1,000+ people who&apos;ve already downloaded this guide and started their transformation.
+            Join the people who&apos;ve already downloaded this guide and started their transformation.
           </p>
         </div>
       </div>
