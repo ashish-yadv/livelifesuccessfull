@@ -58,7 +58,7 @@ export function TierPricingSection() {
                 </div>
 
                 {/* Trust line */}
-                <p className="text-center mt-10 text-sm text-gray-500 dark:text-gray-500">
+                <p className="text-center mt-10 text-sm text-gray-600 dark:text-gray-400">
                     <span className="text-[#FE8D2A] text-sm font-semibold uppercase tracking-widest">
                         ·&nbsp; 
                     </span>
