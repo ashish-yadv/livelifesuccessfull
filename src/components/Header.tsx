@@ -32,34 +32,34 @@ export function Header({ onGetStarted }: Header) {
     },
   ];
 
- /* { useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
-      applyTheme(savedTheme);
-    } else {
-      applyTheme('system');
-    }
-  }, []);
-
-  const applyTheme = (newTheme: Theme) => {
-    const root = document.documentElement;
-    
-    if (newTheme === 'system') {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      root.classList.toggle('dark', prefersDark);
-    } else {
-      root.classList.toggle('dark', newTheme === 'dark');
-    }
-  };
-
-  const handleThemeChange = (newTheme: Theme) => {
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    applyTheme(newTheme);
-    setThemeDropdownOpen(false);
-  };
-  */
+  /* { useEffect(() => {
+     const savedTheme = localStorage.getItem('theme') as Theme;
+     if (savedTheme) {
+       setTheme(savedTheme);
+       applyTheme(savedTheme);
+     } else {
+       applyTheme('system');
+     }
+   }, []);
+ 
+   const applyTheme = (newTheme: Theme) => {
+     const root = document.documentElement;
+     
+     if (newTheme === 'system') {
+       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+       root.classList.toggle('dark', prefersDark);
+     } else {
+       root.classList.toggle('dark', newTheme === 'dark');
+     }
+   };
+ 
+   const handleThemeChange = (newTheme: Theme) => {
+     setTheme(newTheme);
+     localStorage.setItem('theme', newTheme);
+     applyTheme(newTheme);
+     setThemeDropdownOpen(false);
+   };
+   */
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -73,21 +73,21 @@ export function Header({ onGetStarted }: Header) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
+
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <button 
+          <div className="flex items-center">
+            <button
+              aria-label="Scroll to top of page"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center space-x-2 cursor-pointer"
             >
-              <Circle color="#FE8D2A" fill="#FE8D2A"/>
+              <Circle color="#FE8D2A" fill="#FE8D2A" />
 
               {/* Uncomment👇 when you want "Logo" with "Text"*/}
               {/* <div className="w-8 h-8 bg-gradient-to-br from-[#D87620] to-[#FE8D2A] rounded-lg flex items-center justify-center">
                 <span className="text-white">L</span>
               </div>
               <span className="font-medium hidden sm:block tracking-tight">LiveLifeSuccessfull</span> */}
-              
             </button>
           </div>
 
@@ -96,9 +96,9 @@ export function Header({ onGetStarted }: Header) {
             {
               navigationLinks.map((navigationLink, index) => (
                 <button key={index} onClick={() => scrollToSection(navigationLink.link)} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors cursor-pointer">
-                    {navigationLink.title}
-                  </button>
-                ))
+                  {navigationLink.title}
+                </button>
+              ))
             }
 
             {/* Theme Switcher */}
@@ -140,7 +140,7 @@ export function Header({ onGetStarted }: Header) {
               )} */}
             </div>
 
-            <button 
+            <button
               // onClick={() => scrollToSection('pricing')}
               onClick={onGetStarted}
               className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-medium text-[#000000] rounded-lg transition-colors cursor-pointer"
@@ -184,7 +184,7 @@ export function Header({ onGetStarted }: Header) {
               <button onClick={() => scrollToSection('faq')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
                 FAQ
               </button>
-              <button 
+              <button
                 // onClick={() => scrollToSection('pricing')}
                 onClick={onGetStarted}
                 className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-semibold text-[#000000] rounded-lg transition-colors text-center"
