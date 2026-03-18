@@ -59,6 +59,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <button
+                aria-label="Scroll to top of page"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="flex items-center space-x-2 cursor-pointer"
               >
@@ -72,7 +73,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-medium mb-4">Quick Links</h4>
+            <p className="font-medium mb-4">Quick Links</p>
             <ul className="space-y-3">
               <li>
                 <button
@@ -111,12 +112,13 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-medium mb-4">Contact</h4>
+            <p className="font-medium mb-4">Contact</p>
             <ul className="space-y-3">
               <li>
                 <a
                   href="mailto:livelifesuccessfulll@gmail.com"
                   className="text-gray-600 dark:text-gray-400 hover:text-[#FE8D2A] transition-colors"
+                  target="_blank"
                 >
                   Support
                 </a>
@@ -126,8 +128,8 @@ export function Footer() {
 
           {/* Socials */}
           <div>
-            <h4 className="font-medium mb-4">Connect 👇</h4>
-            <ul className="space-y-3 flex gap-7 md:gap-3">
+            <p className="font-medium mb-4">Connect 👇</p>
+            <ul className="flex flex-wrap gap-4">
               {socials.map((social, index) => (
                 <li key={index}>
                   <Link
@@ -147,7 +149,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex justify-center">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               © {currentYear} LiveLifeSuccessfull. All rights reserved.

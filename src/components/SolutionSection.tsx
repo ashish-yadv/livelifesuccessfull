@@ -64,17 +64,17 @@ export function SolutionSection({ onGetStarted }: SolutionSectionProps) {
             </div>
 
             {/* CTA */}
-            <button
+            {/* <button
               onClick={onGetStarted}
               className="group px-8 py-4 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-lg transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl cursor-pointer"
             >
               <span className="font-semibold">
-                {/* Make Discipline Your Identity */}
-                {/* Build Identity Based Habits */}
+                Make Discipline Your Identity
+                Build Identity Based Habits
                 Get The Complete System
               </span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </button> */}
 
             {/* Trust Badge */}
             <div className="mt-8 flex items-center space-x-2 text-gray-600 dark:text-gray-400">

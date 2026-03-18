@@ -1,24 +1,14 @@
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
 
 interface FinalCTASectionProps {
-  onGetStarted: () => void;
+  handlePricingSection: () => void;
 }
 
-export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
+export function FinalCTASection({ handlePricingSection }: FinalCTASectionProps) {
   return (
     <section className="py-24 sm:py-32 relative overflow-hidden">
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/10 via-transparent to-[#b8941f]/10"></div>
-
-      {/* Background Image */}
-      <div className="absolute inset-0 opacity-5">
-        <img
-          src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Background"
-          className="w-full h-full object-cover"
-        />
-      </div>
 
       <div className="relative max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
         {/* Main Content */}
@@ -37,7 +27,7 @@ export function FinalCTASection({ onGetStarted }: FinalCTASectionProps) {
 
           {/* CTA Button */}
           <button
-            onClick={onGetStarted}
+            onClick={handlePricingSection}
             className="group px-10 py-5 bg-[#FE8D2A] hover:bg-[#D87620] text-[#000000] rounded-xl transition-all duration-300 inline-flex items-center space-x-3 shadow-xl hover:shadow-2xl text-lg sm:text-xl cursor-pointer"
           >
             <span className="font-semibold">

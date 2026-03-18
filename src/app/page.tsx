@@ -5,11 +5,13 @@ import { HeroSection } from '../components/HeroSection';
 import { ProblemSection } from '../components/ProblemSection';
 import { TurningPointSection } from '../components/TurningPointSection';
 import { SolutionSection } from '../components/SolutionSection';
-import { SocialProofSection1 } from '../components/SocialProofSection1';
-import { SocialProofSection2 } from '../components/SocialProofSection2';
+import { NewSolutionSection } from '../components/NewSolutionSection';
+import { SocialProofSection } from '../components/SocialProofSection';
 import { LeadMagnetSection } from '../components/LeadMagnetSection';
-import { ValueSection } from '../components/ValueSection';
+import { Frameworks } from '../components/Frameworks';
 import { AboutSection } from '../components/AboutSection';
+import { FounderSection } from '../components/FounderSection';
+import { TierPricingSection } from '../components/TierPricingSection';
 import { PricingSection } from '../components/PricingSection';
 import { FAQSection } from '../components/FAQSection';
 import { FinalCTASection } from '../components/FinalCTASection';
@@ -26,14 +28,28 @@ export default function Home() {
 
   const handleGetStarted = () => {
     // setShowForm('purchase');       // NOTE: Enable this when using "Forms" to collect data.
-    window.open("https://livelifesuccessfull.gumroad.com/", "_blank")
+    // window.open("https://livelifesuccessfull.gumroad.com/", "_blank")
+    window.open("https://livelifesuccessfull.vercel.app/#pricing")
   };
-
+  
   const handleDownloadGuide = () => {
     // setShowForm('lead');         // NOTE: Enable this when using "Forms" to collect data.
     // window.open("https://livelifesuccessfull.gumroad.com/l/the-discipline-reset-checklist", "_blank")
     window.open("https://livelifesuccessfull.gumroad.com/l/30-day-habit-transformation-blueprint-free-version", "_blank")
   };
+
+  const handlePricingSection = () => {
+    const el = document.getElementById("pricing");
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleFrameworksSection = () => {
+    const el = document.getElementById("frameworks");
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
 
   // const handleFormSubmit = (data: { name: string; email: string }) => {
   //   console.log('Form submitted:', data);
@@ -56,18 +72,21 @@ export default function Home() {
     <div className="relative selection:bg-orange-300 selection:text-black">
       <Header onGetStarted={handleGetStarted}/>
       <main>
-        <HeroSection onGetStarted={handleGetStarted} onDownloadGuide={handleDownloadGuide} />
-        <SocialProofSection1 />
+        <HeroSection handlePricingSection={handlePricingSection} handleFrameworksSection={handleFrameworksSection} />
         <ProblemSection />
-        <TurningPointSection />
-        <SolutionSection onGetStarted={handleGetStarted} />
-        <SocialProofSection2 />
-        <LeadMagnetSection onDownloadGuide={handleDownloadGuide} />
-        <ValueSection />
-        <AboutSection />
-        <PricingSection onGetStarted={handleGetStarted} />
+        <FounderSection />
+        {/* <AboutSection /> */}
+        {/* <TurningPointSection /> */}
+        <Frameworks />
+        <NewSolutionSection />
+        {/* <SolutionSection onGetStarted={handleGetStarted} /> */}
+        <SocialProofSection />
+        <TierPricingSection />
+        {/* Delete this👇 component in future */}
+        {/* <PricingSection onGetStarted={handleGetStarted} /> */}
         <FAQSection />
-        <FinalCTASection onGetStarted={handleGetStarted} />
+        <LeadMagnetSection onDownloadGuide={handleDownloadGuide} />
+        <FinalCTASection handlePricingSection={handlePricingSection} />
       </main>
 
       <Footer />
