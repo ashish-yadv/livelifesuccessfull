@@ -65,7 +65,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
                     {/* Name + tagline */}
                     <div className="mb-5 pb-5 border-b border-gray-200 dark:border-gray-800">
-                        <h3 className="font-semibold text-2xl sm:text-3xl mb-1 leading-snug">
+                        <h3 className="font-semibold text-xl sm:text-2xl mb-1 leading-snug">
                             {product.name}
                         </h3>
                         <p className={`text-sm font-medium italic ${product.accentColor}`}>
