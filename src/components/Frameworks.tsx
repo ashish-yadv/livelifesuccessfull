@@ -1,4 +1,5 @@
 import { Clock, Shield, User, Lightbulb } from 'lucide-react';
+import { SectionLabel } from './ui/SectionLabel';
 
 export function Frameworks() {
   const modules = [
@@ -29,11 +30,7 @@ export function Frameworks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6 border border-[#FE8D2A]/20">
-            <span className="text-[#FE8D2A] text-sm font-semibold uppercase tracking-widest">
-              Core Frameworks
-            </span>
-          </div>
+          <SectionLabel>Core Frameworks</SectionLabel>
           <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6">
             The Science Behind
             <br />

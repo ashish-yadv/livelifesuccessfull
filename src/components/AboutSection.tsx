@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SectionLabel } from "./ui/SectionLabel";
 
 export function AboutSection() {
   return (
@@ -21,9 +22,7 @@ export function AboutSection() {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6">
-              <span className="text-[#FE8D2A]">About the Founder</span>
-            </div>
+            <SectionLabel>About the Founder</SectionLabel>
 
             <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6">
               From Lost to Focused
