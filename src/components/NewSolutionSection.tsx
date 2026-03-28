@@ -1,4 +1,5 @@
 import { solutionProducts } from './SolutionProducts';
+import { SectionLabel } from './ui/SectionLabel';
 import { SolutionCard } from './ui/SolutionCard';
 
 export function NewSolutionSection() {
@@ -10,16 +11,12 @@ export function NewSolutionSection() {
                 <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
 
                     {/* Label */}
-                    <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6 border border-[#FE8D2A]/20">
-                        <span className="text-[#FE8D2A] text-sm font-semibold uppercase tracking-widest">
-                            The Solution
-                        </span>
-                    </div>
+                    <SectionLabel>The Solution</SectionLabel>
 
                     <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6 leading-[1.2]">
                         One System.
                         <br />
-                        <span className="text-[#FE8D2A]">Three Ways .</span>
+                        <span className="text-[#FE8D2A]">Three Ways.</span>
                     </h2>
 
                     <p className="text-xl text-gray-600 dark:text-gray-400">

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { SectionLabel } from './ui/SectionLabel';
 
 const realizations = [
     {
@@ -51,11 +52,7 @@ export function FounderSection() {
 
                 {/* ── HEADER ───────────────────────────────────────────────────────── */}
                 <div className="text-center mb-16 sm:mb-20">
-                    <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6 border border-[#FE8D2A]/20">
-                        <span className="text-[#FE8D2A] text-sm font-semibold uppercase tracking-widest">
-                            About the Founder
-                        </span>
-                    </div>
+                    <SectionLabel>About the Founder</SectionLabel>
                     <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.2]">
                         From Lost to{' '}
                         <span className="text-[#FE8D2A]">Focused</span>
@@ -84,11 +81,11 @@ export function FounderSection() {
                     <div className="order-1 lg:order-2 space-y-5 text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                         <p>
                             I spent years trapped in the cycle of starting and stopping.
-                            Every Monday was a "fresh start." Every Thursday was a failure.
-                            I blamed myself, thinking I just wasn't disciplined enough.
+                            Every Monday was a &quot;fresh start.&quot; Every Thursday was a failure.
+                            I blamed myself, thinking I just wasn&apos;t disciplined enough.
                         </p>
                         <p>
-                            But the truth was different. I wasn't lacking willpower — I was
+                            But the truth was different. I wasn&apos;t lacking willpower — I was
                             lacking{' '}
                             <span className="text-[#FE8D2A] font-semibold">a system</span>.
                         </p>
@@ -102,17 +99,18 @@ export function FounderSection() {
                         {/* Founder attribution inline with the story */}
                         <div className="pt-5 border-t border-gray-200 dark:border-gray-800">
                             <p className="text-base text-gray-900 dark:text-gray-100 italic mb-3">
-                                "I rebuilt my discipline after losing focus for years. I share
-                                everything I learned so you don't waste more time restarting."
+                                &quot;I rebuilt my discipline after losing focus for years. I share
+                                everything I learned so you don&apos;t waste more time restarting.&quot;
                             </p>
                             <div className="flex items-center gap-3">
-                                <div className="w-8 h-px bg-[#FE8D2A]" />
+                                <div className="w-4 h-px bg-[#FE8D2A]" />
                                 <div>
                                     <div className="text-sm font-semibold text-gray-900 dark:text-gray-100">
                                         Founder
                                     </div>
                                     <div className="text-xs text-gray-500 dark:text-gray-400">
-                                        LiveLifeSuccessfull
+                                        {/* LiveLifeSuccessfull */}
+                                        Ashish
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +183,7 @@ export function FounderSection() {
                         className="absolute -top-6 -left-2 text-[120px] leading-none font-serif text-[#FE8D2A]/10 dark:text-[#FE8D2A]/15 select-none pointer-events-none"
                         aria-hidden="true"
                     >
-                        "
+                        &quot;
                     </div>
 
                     <div className="relative p-6 sm:p-12 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800/80 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-xl">
@@ -193,12 +191,12 @@ export function FounderSection() {
                         <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#FE8D2A] to-transparent" />
 
                         <p className="text-xl sm:text-2xl lg:text-3xl italic leading-relaxed text-gray-900 dark:text-gray-100 mb-6">
-                            The breakthrough wasn't learning more. It was simplifying
+                            The breakthrough wasn&apos;t learning more. It was simplifying
                             everything. Removing the noise. Building one habit at a time.
                             Trusting the process, not the feeling.
                         </p>
                         <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
-                            This system isn't theory. It's what pulled me out of years of
+                            This system isn&apos;t theory. It&apos;s what pulled me out of years of
                             inconsistency.{' '}
                             <span className="text-[#FE8D2A] font-semibold">
                                 And it will work for you too.

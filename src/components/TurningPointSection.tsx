@@ -1,3 +1,5 @@
+import { SectionLabel } from "./ui/SectionLabel";
+
 export function TurningPointSection() {
   return (
     <section className="py-24 sm:py-32 relative overflow-hidden">
@@ -12,9 +14,7 @@ export function TurningPointSection() {
       <div className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
-          <div className="inline-block px-4 py-2 bg-[#FE8D2A]/10 rounded-full mb-6">
-            <span className="text-[#FE8D2A]">The Turning Point</span>
-          </div>
+          <SectionLabel>The Turning Point</SectionLabel>
           <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl mb-6">
             How I Found My Way Back
           </h2>

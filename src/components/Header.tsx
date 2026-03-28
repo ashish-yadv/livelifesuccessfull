@@ -1,6 +1,8 @@
 import { Circle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, Monitor } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 
 // type Theme = 'light' | 'dark' | 'system';
 
@@ -9,27 +11,20 @@ interface Header {
 }
 
 export function Header({ onGetStarted }: Header) {
+
+  const pathname = usePathname();
+  const router = useRouter();
+  const isHomePage = pathname === "/";
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // const [theme, setTheme] = useState<Theme>('system');
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
 
   const navigationLinks = [
-    {
-      title: "Solution",
-      link: "solution",
-    },
-    {
-      title: "About",
-      link: "about",
-    },
-    // {
-    //   title: "Pricing",
-    //   link: "pricing",
-    // },
-    {
-      title: "FAQ",
-      link: "faq",
-    },
+    { title: "Solution", link: "solution", type: "scroll" },
+    { title: "About", link: "about", type: "scroll" },
+    { title: "FAQ", link: "faq", type: "scroll" },
+    { title: "Blog", link: "/blog", type: "route" },
   ];
 
   /* { useEffect(() => {
@@ -62,10 +57,11 @@ export function Header({ onGetStarted }: Header) {
    */
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
+    setMobileMenuOpen(false);
+    if (isHomePage) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      router.push(`/#${id}`);
     }
   };
 
@@ -78,7 +74,7 @@ export function Header({ onGetStarted }: Header) {
           <div className="flex items-center">
             <button
               aria-label="Scroll to top of page"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => isHomePage ? window.scrollTo({ top: 0, behavior: 'smooth' }) : router.push('/')}
               className="flex items-center space-x-2 cursor-pointer"
             >
               <Circle color="#FE8D2A" fill="#FE8D2A" />
@@ -93,13 +89,25 @@ export function Header({ onGetStarted }: Header) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {
-              navigationLinks.map((navigationLink, index) => (
-                <button key={index} onClick={() => scrollToSection(navigationLink.link)} className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors cursor-pointer">
-                  {navigationLink.title}
+            {navigationLinks.map((navLink, index) =>
+              navLink.type === "route" ? (
+                <Link
+                  key={index}
+                  href={navLink.link}
+                  className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors"
+                >
+                  {navLink.title}
+                </Link>
+              ) : (
+                <button
+                  key={index}
+                  onClick={() => scrollToSection(navLink.link)}
+                  className="text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] transition-colors cursor-pointer"
+                >
+                  {navLink.title}
                 </button>
-              ))
-            }
+              )
+            )}
 
             {/* Theme Switcher */}
             <div className="relative">
@@ -141,7 +149,6 @@ export function Header({ onGetStarted }: Header) {
             </div>
 
             <button
-              // onClick={() => scrollToSection('pricing')}
               onClick={onGetStarted}
               className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-medium text-[#000000] rounded-lg transition-colors cursor-pointer"
             >
@@ -172,22 +179,29 @@ export function Header({ onGetStarted }: Header) {
         {mobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('solution')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
-                System
-              </button>
-              <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
-                About
-              </button>
-              {/* <button onClick={() => scrollToSection('pricing')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
-                Pricing
-              </button> */}
-              <button onClick={() => scrollToSection('faq')} className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]">
-                FAQ
-              </button>
+              {navigationLinks.map((navLink, index) =>
+                navLink.type === "route" ? (
+                  <Link
+                    key={index}
+                    href={navLink.link}
+                    className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A]"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {navLink.title}
+                  </Link>
+                ) : (
+                  <button
+                    key={index}
+                    onClick={() => scrollToSection(navLink.link)}
+                    className="text-left text-gray-700 dark:text-gray-300 hover:text-[#FE8D2A] cursor-pointer"
+                  >
+                    {navLink.title}
+                  </button>
+                )
+              )}
               <button
-                // onClick={() => scrollToSection('pricing')}
                 onClick={onGetStarted}
-                className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-semibold text-[#000000] rounded-lg transition-colors text-center"
+                className="px-6 py-2 bg-[#FE8D2A] hover:bg-[#D87620] font-medium text-[#000000] rounded-lg transition-colors cursor-pointer"
               >
                 Build Better Habits
               </button>
