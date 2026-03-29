@@ -87,7 +87,7 @@ export function BlogCard({ post, featured = false }: BlogCardProps) {
 
                 {/* Footer */}
                 <div className="flex flex-col items-start justify-between gap-2 md:flex-row md:items-center md:gap-4">
-                    <span className="text-sm text-gray-400 dark:text-gray-500">
+                    <span className="text-sm text-gray-600 dark:text-gray-400">
                         <FormattedDate rawDate={post.rawDate} />
                         {/* {" · "} */}
                         <br />

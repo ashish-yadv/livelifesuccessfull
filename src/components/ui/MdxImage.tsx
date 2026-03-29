@@ -41,7 +41,8 @@ export function MdxImage({ src, alt, aspectRatio = "56.25%" }: MdxImageProps) {
                 src={src}
                 alt={alt ?? ""}
                 fill
-                className="object-cover"
+                // className="object-cover"
+                className=""
                 sizes="(max-width: 896px) 100vw, 896px"
             />
         </span>

@@ -37,7 +37,7 @@ export function BlogGrid({ posts }: BlogGridProps) {
 
     return (
         <>
-            <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-gray-600 dark:text-gray-400 mb-10">
                 {posts.length} article{posts.length !== 1 ? "s" : ""}
             </p>
 
