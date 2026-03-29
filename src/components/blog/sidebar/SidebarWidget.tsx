@@ -24,7 +24,7 @@ export function SidebarWidget({
                 divider ? "border-b border-gray-200 dark:border-gray-800" : "",
             ].join(" ")}
         >
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-widest text-gray-600 dark:text-gray-400 mb-4">
                 {label}
             </p>
             {children}
