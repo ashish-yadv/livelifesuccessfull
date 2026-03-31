@@ -20,8 +20,8 @@ export function PostSidebar({ relatedPosts }: PostSidebarProps) {
     return (
         <aside className="sticky top-20 self-start">
             <AuthorBox />
-            <RelatedPosts posts={relatedPosts} />
             <NewsletterBox />
+            <RelatedPosts posts={relatedPosts} />
         </aside>
     );
 }
