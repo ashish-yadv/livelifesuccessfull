@@ -27,7 +27,7 @@ const components = {
         </h4>
     ),
     p: ({ children }: { children?: React.ReactNode }) => (
-        <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg leading-[1.55] mb-6">
+        <p className="text-gray-600 dark:text-gray-400 text-xl leading-[1.5] sm:leading-[1.73]  mb-6">
             {children}
         </p>
     ),
@@ -90,7 +90,7 @@ const components = {
 
 export function PostBody({ content }: PostBodyProps) {
     return (
-        <div className="max-w-none">
+        <div className="max-w-none font-[family-name:var(--font-crimson-pro)]">
             <MDXRemote source={content} components={components} />
         </div>
     );

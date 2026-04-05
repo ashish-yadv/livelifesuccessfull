@@ -44,7 +44,7 @@ export const products: Product[] = [
         price: 17,
         badge: null,
         image: {
-            src: `/30-day-habit-jumpstart.webp`,
+            src: `/productAssets/30-day-habit-jumpstart.webp`,
             alt: `30-Day Habit Jumpstart — Lite PDF mockup`,
             label: `PDF Guide`,
             accentHex: `#94a3b8`,
@@ -69,7 +69,7 @@ export const products: Product[] = [
         id: `advanced`,
         tier: `Complete`,
         tierIcon: `zap`,
-        name: `The 30-Day Habit Blueprint`,
+        name: `The Habit Transformation Blueprint`,
         tagline: `The last habit guide you will ever need`,
         description:
             `The science-backed system with the The 30-Day Habit Jumpstart as your daily companion.`,
@@ -77,7 +77,7 @@ export const products: Product[] = [
         price: 47,
         badge: `Most Popular`,
         image: {
-            src: `/neural-rewire-blueprint.webp`,
+            src: `/productAssets/the-habit-transformation-blueprint.webp`,
             alt: `Neural Rewire Blueprint — Advanced PDF mockup`,
             label: `PDF Guide`,
             accentHex: `#FE8D2A`,
@@ -102,7 +102,7 @@ export const products: Product[] = [
         id: `os`,
         tier: `Ultimate`,
         tierIcon: `monitor`,
-        name: `The 30-Day Habit Transformation OS`,
+        name: `The Habit Mastery OS`,
         tagline: `Stop relying on willpower. Build the system.`,
         description:
             `The complete ecosystem: Habit Mastery OS + the Blueprint and the Jumpstart.`,
@@ -110,7 +110,7 @@ export const products: Product[] = [
         price: 97,
         badge: `Best Value`,
         image: {
-            src: `/habit-transformation-os.webp`,
+            src: `/productAssets/habit-mastery-os.webp`,
             alt: `Habit Transformation OS — Notion dashboard screenshot`,
             label: `PDF + Notion OS`,
             accentHex: `#f59e0b`,

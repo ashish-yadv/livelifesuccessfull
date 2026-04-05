@@ -2,6 +2,7 @@ import { getAllPosts } from "@/src/lib/posts";
 import { BlogHeader } from "@/src/components/blog/BlogHeader";
 import { BlogHero } from "@/src/components/blog/BlogHero";
 import { BlogGrid } from "@/src/components/blog/BlogGrid";
+import { ProductFooter } from "@/src/components/blog/ProductFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function BlogPage() {
     return (
         <>
             <BlogHeader />
+
             <main className="min-h-screen bg-white dark:bg-gray-950 pt-16">
                 <BlogHero />
                 <section className="py-24 sm:py-32">
@@ -24,6 +26,9 @@ export default function BlogPage() {
                     </div>
                 </section>
             </main>
+
+            {/* Product band — outside <main> so it breaks out of the white bg */}
+            <ProductFooter />
         </>
     );
 }

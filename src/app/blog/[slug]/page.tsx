@@ -3,17 +3,14 @@ import { BlogHeader } from "@/src/components/blog/BlogHeader";
 import { PostHeader } from "@/src/components/blog/PostHeader";
 import { PostBody } from "@/src/components/blog/PostBody";
 import { PostSidebar } from "@/src/components/blog/PostSidebar";
-import { PostCTA } from "@/src/components/blog/PostCTA";
+// import { PostCTA } from "@/src/components/blog/PostCTA";
+import { ProductFooter } from "@/src/components/blog/ProductFooter";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-
-// ─── Static Params ────────────────────────────────────────────────────────────
 
 export function generateStaticParams(): { slug: string }[] {
     return getAllPostSlugs().map((slug) => ({ slug }));
 }
-
-// ─── SEO Metadata ─────────────────────────────────────────────────────────────
 
 export async function generateMetadata({
     params,
@@ -43,8 +40,6 @@ export async function generateMetadata({
     };
 }
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
-
 export default async function BlogPostPage({
     params,
 }: {
@@ -61,6 +56,7 @@ export default async function BlogPostPage({
     return (
         <>
             <BlogHeader />
+
             <main className="min-h-screen bg-white dark:bg-gray-950 pt-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-12 xl:gap-20 items-start">
@@ -74,7 +70,8 @@ export default async function BlogPostPage({
                                 tags={post.tags}
                             />
                             <PostBody content={post.content} />
-                            <PostCTA />
+                            {/* <PostProductMention /> */}
+                            {/* <PostCTA /> */}
                         </div>
 
                         {/* Sidebar */}
@@ -83,6 +80,9 @@ export default async function BlogPostPage({
                     </div>
                 </div>
             </main>
+
+            {/* Product band — outside <main> so it breaks out of the white bg */}
+            <ProductFooter />
         </>
     );
 }
