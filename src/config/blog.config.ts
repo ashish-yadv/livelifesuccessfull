@@ -12,7 +12,8 @@ export const BLOG_CONFIG = {
         name: "LiveLifeSuccessfull",
         /** Initial shown in avatar until you have a real photo */
         initial: "L",
-        bio: "Discipline & habit systems. Helping people escape chaos with practical, science-backed frameworks.",
+        // bio: "Discipline & habit systems. Helping people escape chaos with practical, science-backed frameworks.",
+        bio: "Discipline & Habit systems. Helping people build meaningful habits with practical, science-backed frameworks.",
         /** Replace undefined with "/your-photo.webp" once you have one */
         avatar: `/logo.webp` as string | undefined,
     },

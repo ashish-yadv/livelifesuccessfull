@@ -89,12 +89,7 @@ export function SolutionCard({ product }: SolutionCardProps) {
                 {/* Anchor link — text only, no button */}
                 <a
                     href="#pricing"
-                    className={`
-            group/link flex items-center justify-center gap-1.5
-            text-sm font-semibold transition-opacity duration-200
-            hover:opacity-80 ${product.accentColor}
-          `}
-                >
+                    className={`group/link flex items-center justify-center gap-1.5 text-sm font-semibold transition-opacity duration-200 hover:opacity-80 ${product.accentColor}`}>
                     See pricing
                     <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                 </a>

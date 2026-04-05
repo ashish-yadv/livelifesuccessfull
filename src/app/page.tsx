@@ -69,7 +69,7 @@ export default function Home() {
   }
 
   return (
-    <div className="relative selection:bg-orange-300 selection:text-black">
+    <div className="relative">
       <Header onGetStarted={handlePricingSection}/>
       <main>
         <HeroSection handlePricingSection={handlePricingSection} handleFrameworksSection={handleFrameworksSection} />

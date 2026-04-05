@@ -37,7 +37,7 @@ export const solutionProducts: SolutionProduct[] = [
         ],
         bestFor: `The person who needs one clean win to prove they can follow through.`,
         image: {
-            src: `/30-day-habit-jumpstart.webp`,
+            src: `/productAssets/30-day-habit-jumpstart.webp`,
             alt: `30-Day Habit Jumpstart — Lite PDF mockup`,
             label: `PDF Guide`,
             accentHex: `#94a3b8`,
@@ -51,7 +51,7 @@ export const solutionProducts: SolutionProduct[] = [
         id: `advanced`,
         tier: `Complete`,
         tierIcon: `zap`,
-        name: `The 30-Day Habit Blueprint`,
+        name: `The Habit Transformation Blueprint`,
         description:
             `The complete science-backed system, that answers every question your skeptical brain throws at it.`,
         highlights: [
@@ -62,7 +62,7 @@ export const solutionProducts: SolutionProduct[] = [
         ],
         bestFor: `The person who wants to understand the why, so they never have to restart again.`,
         image: {
-            src: `/neural-rewire-blueprint.webp`,
+            src: `/productAssets/the-habit-transformation-blueprint.webp`,
             alt: `Neural Rewire Blueprint — Advanced PDF mockup`,
             label: `PDF Guide`,
             accentHex: `#FE8D2A`,
@@ -76,7 +76,7 @@ export const solutionProducts: SolutionProduct[] = [
         id: `os`,
         tier: `Ultimate`,
         tierIcon: `monitor`,
-        name: `The 30-day Habit Transformation OS`,
+        name: `The Habit Mastery OS`,
         description:
             `The complete ecosystem. The 30-Day Habit Blueprint + Habit Mastery OS that makes showing up the path of least resistance.`,
         highlights: [
@@ -87,7 +87,7 @@ export const solutionProducts: SolutionProduct[] = [
         ],
         bestFor: `The person who's done relying on motivation and wants a system that runs itself.`,
         image: {
-            src: `/habit-transformation-os.webp`,
+            src: `/productAssets/habit-mastery-os.webp`,
             alt: `Habit Transformation OS — Notion dashboard screenshot`,
             label: `PDF + Notion OS`,
             accentHex: `#f59e0b`,

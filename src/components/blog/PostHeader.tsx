@@ -38,7 +38,7 @@ export function PostHeader({ title, rawDate, readTime, tags }: PostHeaderProps) 
             )}
 
             {/* Title */}
-            <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-[1.15] text-gray-900 dark:text-gray-100 mb-5">
+            <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-[1.5] text-gray-900 dark:text-gray-100 mb-5">
                 {title}
             </h1>
 
