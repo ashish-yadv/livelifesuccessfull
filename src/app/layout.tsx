@@ -48,6 +48,10 @@ export const metadata: Metadata = {
     default: "Stop Blaming Yourself For Quitting | LiveLifeSuccessfull",
   },
 
+  verification: {
+    google: "gYPUuV7mAa_t6udk7udndwf3JBhMxCTnI3ti0B5t56I",
+  },
+
   description:
     "The problem was never willpower — it was the lack of a system. Build the habit system that makes showing up the path of least resistance. Used by 1,000+ people.",
 
