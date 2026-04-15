@@ -17,6 +17,7 @@ import { FAQSection } from '../components/FAQSection';
 import { FinalCTASection } from '../components/FinalCTASection';
 import { Footer } from '../components/Footer';
 import { ThankYouPage } from '../components/ThankYouPage';
+import { HomeJsonLd } from '../components/JsonLd';
 // import { LeadForm } from '../components/LeadForm';
 import { StickyCTA } from '../components/StickyCTA';
 
@@ -70,6 +71,9 @@ export default function Home() {
 
   return (
     <div className="relative">
+      {/* JSON-LD structured data for Google */}
+      <HomeJsonLd />
+      
       <Header onGetStarted={handlePricingSection}/>
       <main>
         <HeroSection handlePricingSection={handlePricingSection} handleFrameworksSection={handleFrameworksSection} />
